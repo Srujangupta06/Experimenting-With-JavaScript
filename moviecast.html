@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cast</title>
+    
+</head>
+<style>
+    .movie-title{
+        font-size: 35px;
+        color: goldenrod;
+        text-align: center;
+    }
+    .actor-img{
+        height: 120px;
+        border-radius: 10px;
+    }
+    .movie-cast-container{
+        width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid lightslategray;
+        margin-right: 25px;
+        padding: 15px;
+    }
+    .actor-name{
+        font-size: 22px;
+    }
+    .actor-description{
+        font-size: 13px;
+    }
+    .flex-item-container{
+        display: flex;
+        padding: 25px;
+        justify-content: center;
+    }
+    .more-info{
+        font-size: 15px;
+        text-decoration: none;
+    }
+    @media screen and (max-width:768px){
+    .movie-title{
+        font-size: 28px;
+        color: goldenrod;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .actor-img{
+        height: 90px;
+        border-radius: 8px;
+    }
+    .movie-cast-container{
+        width: 80vw;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid lightslategray;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .actor-name{
+        font-size: 22px;
+    }
+    .actor-description{
+        font-size: 13px;
+    }
+    .flex-item-container{
+        width: 80vw;
+        display: flex;
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+    .more-info{
+        font-size: 15px;
+        text-decoration: none;
+    }
+    }
+
+
+</style>
+<body>
+    <h1 class="movie-title">HARI HARA VEERA MALLU</h1>
+    <div class="flex-item-container">
+        <div class="movie-cast-container" id="actor">
+            <h1 class="actor-name">Pawan Kalyan</h1>
+            <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/pawan-kalyan-26911-19-09-2017-02-46-38.jpg" 
+            class="actor-img"/>
+            <p class="actor-description">Konidela Pawan Kalyan (born Konidela Kalyan Babu; 2 September 1968 or 1971) is an Indian actor, politician, filmmaker, 
+                martial artist, and philanthropist who works in Telugu cinema. Known for his unique acting style and mannerisms, 
+                he has a large fan base and a cult following. One of the highest-paid actors of Indian cinema, he has been featured in 
+                Forbes India's Celebrity 100 list since 2013 and is the recipient of a Filmfare Award, a SIIMA Award, a CineMAA Award, 
+                and a Santosham Film Award. He is also the founder of the Jana Sena Party.
+            </p>
+            <button class="more-info" onclick="heroInfo()">Know more</button>
+        </div>
+
+        <div class="movie-cast-container" id="actress">
+            <h1 class="actor-name">Nidhhi Agarwal</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuG56oCGHKXZXtQS1Cgd5EYWl7qpfvNKJGhQ&usqp=CAU" 
+            class="actor-img"/>
+            <p class="actor-description">Nidhhi Agerwal is an Indian actress who primarily works in Telugu, Tamil and Hindi films. 
+                After participating in Miss Diva Universe 2014, Agerwal made her acting debut with the Hindi film Munna Michael (2017), 
+                for which she received Zee Cine Award for Best Female Debut.
+                Agerwal made her Telugu debut with Savyasachi (2018) and Tamil debut with Eeswaran (2021). For the former, 
+                she received SIIMA Award for Best Female Debut - Telugu nominations. She has been part of successful films including 
+                iSmart Shankar (2019) and Kalaga Thalaivan (2022).
+            </p>
+            <button class="more-info" onclick="actressInfo()">Know more</button>
+        </div>
+
+        <div class="movie-cast-container" id="director">
+            <h1 class="actor-name">Krish Jagarlamudi</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Krish_.jpg/330px-Krish_.jpg" 
+            class="actor-img"/>
+            <p class="actor-description">Radha Krishna Jagarlamudi (born 11 November 1978), better known as Krish Jagarlamudi or Krish, 
+                is an Indian film director and screenwriter who works predominantly in Telugu cinema in addition to Hindi and Tamil films. 
+                He has earned numerous accolades throughout his career including a National Film Award and two Filmfare Awards South.
+                Krish began his career in 2008 with the road film Gamyam and followed it up with the hyperlink film Vedam in 2010, 
+                both of which gained critical acclaim and big accolades. In 2015, he helmed the period war drama Kanche set in Nazi Germany, which won the National Film Award for Best Feature Film in Telugu.
+            </p>
+            <button class="more-info" onclick="directorInfo()">Know more</button>
+        </div>
+
+        <div class="movie-cast-container" id="villan">
+            <h1 class="actor-name">Bobby Deol</h1>
+            <img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/bobby-deol-338-1708943147.jpg" 
+            class="actor-img"/>
+            <p class="actor-description">
+                Vijay Singh Deol (born 27 January 1969) is an Indian actor who works in Hindi films.A member of the Deol family,
+                 he is the younger son of actor Dharmendra and brother of actor Sunny Deol. After appearing as a child artist 
+                 in Dharam Veer (1977), Deol had his first lead role in the romance Barsaat (1995), which won him the Filmfare 
+                 Award for Best Male Debut. He established himself with commercially successful action or thriller films,
+                  including Gupt (1997), Soldier (1998), Badal (2000), Bichhoo (2000), Ajnabee (2001), and Humraaz (2002). 
+                  The last of these earned him a nomination for the Filmfare Award for Best Actor.
+            </p>
+            <button class="more-info" onclick="villanInfo()">Know more</button>
+        </div>
+    </div>
+
+    <script>
+        let hero = document.getElementById("actor");
+        let heroine = document.getElementById("actress");
+        let director = document.getElementById("director");
+        let villan = document.getElementById("villan");
+        function heroInfo(){
+            hero.style.backgroundColor = "lightgray";
+        }
+        function actressInfo(){
+            heroine.style.backgroundColor = "lightpink";
+        }
+        function directorInfo(){
+            director.style.backgroundColor = "lightblue";
+        }
+        function villanInfo(){
+            villan.style.backgroundColor = "lightgreen";
+        }
+    </script>
+</body>
+</html>
