@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .bg-container{
+            border: 1px  solid rgb(52, 143, 235);
+            border-radius: 10px;
+            margin: 45px;
+            padding: 10px;
+        }.personal-details-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 35px;
+            padding-right: 35px;
+        }.person-name{
+            font-size: 35px;
+            color: rgb(52, 143, 235);
+        }
+        .person-url{
+            color: rgb(52, 143, 235);
+            text-decoration: none;
+        }.person-img{
+            height: 250px;
+            width: 250px;
+        }.section-heading{
+            color: rgb(52, 143, 235);
+            font-size: 22px;
+            font-weight: 700;
+            padding-left: 35px;
+            padding-right: 35px;
+        }.person-main-objective-container{
+            padding-left: 35px;
+            padding-right: 35px;
+        }.objective{
+            font-size: 18px;
+            width: 750px;
+        }.person-educational-details-container{
+            padding-left: 35px;
+            padding-right: 90px;
+        } .person-qualifications-container{
+            display: flex;
+            justify-content: space-between;
+        } .person-qualification-type{
+            font-style: italic;
+        }
+        .person-specialization{
+            font-style: italic;
+        }.secured-gpa{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .person-school-name{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .person-skills-container{
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        .skill-type{
+            font-weight: 700;
+            font-size: 18px;
+        }
+        li{
+            list-style-type: none;
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="bgContainer" class="bg-container">
+
+    </div>
+    <script>
+        let bgContainerEl = document.getElementById("bgContainer");
+        let personDetailsContainerEl = document.createElement("div");
+        personDetailsContainerEl.classList.add("personal-details-container");
+        bgContainerEl.appendChild(personDetailsContainerEl);
+
+        let containerEl = document.createElement("div");
+        personDetailsContainerEl.appendChild(containerEl);
+
+        let personName = document.createElement("h1");
+        personName.innerHTML = "SRUJAN KANDAKURTHI"
+        personName.classList.add("person-name");
+        containerEl.appendChild(personName);
+
+        let personContactInfo = document.createElement("h3");
+        personContactInfo.textContent = "9xxxxxxxx1";
+        containerEl.appendChild(personContactInfo);
+
+        let personMail = document.createElement("h3");
+        personMail.innerHTML = "Mail: xyz@gmail.com";
+        containerEl.appendChild(personMail);
+
+        let personLinkedInId = document.createElement("h3");
+        personLinkedInId.innerHTML = "LinkedIn : ";
+        containerEl.appendChild(personLinkedInId);
+
+        let LinkedInUrl = document.createElement("a");
+        LinkedInUrl.href = "https://www.linkedin.com/in/srujan-kandakurthi/";
+        LinkedInUrl.target = "_blank";
+        LinkedInUrl.innerHTML = "www.linkedin.com/in/srujan-kandakurthi";
+        LinkedInUrl.classList.add("person-url");
+        personLinkedInId.appendChild(LinkedInUrl);
+
+        let personGitHubId = document.createElement("h3");
+        personGitHubId.innerHTML = "GitHub : ";
+        containerEl.appendChild(personGitHubId);
+
+        let githubUrl = document.createElement("a");
+        githubUrl.innerHTML = "github.com/Srujangupta06";
+        githubUrl.href = "https://github.com/Srujangupta06";
+        githubUrl.target = "_blank";
+        githubUrl.classList.add("person-url");
+        personGitHubId.appendChild(githubUrl);
+
+        let personImageEl = document.createElement("img");
+        personImageEl.src = "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?w=740&t=st=1715692364~exp=1715692964~hmac=2907c5b0103c50a3259744bd77bdd220d143dcc0d51af2200785bc39f9b27c71";
+        personImageEl.classList.add("person-img");
+        personDetailsContainerEl.appendChild(personImageEl);
+
+        let objectiveSectionHeadingEl = document.createElement("h3");
+        objectiveSectionHeadingEl.innerHTML = "Objective";
+        objectiveSectionHeadingEl.classList.add("section-heading");
+        bgContainerEl.appendChild(objectiveSectionHeadingEl);
+
+        let personObjectiveContainerEl = document.createElement("div");
+        personObjectiveContainerEl.classList.add("person-main-objective-container");
+        bgContainerEl.appendChild(personObjectiveContainerEl);
+
+        let objectiveEl = document.createElement("p");
+        objectiveEl.innerHTML = "Having ability to acquire new skills and adopt the best practices to improve. Objective is to work with maximum potential in a challenging and dynamic environment, with an opportunity of working with diverse group of people and enhancing my professional skills.";
+        objectiveEl.classList.add("objective");
+        personObjectiveContainerEl.appendChild(objectiveEl);
+
+        let educationSectionHeadingEl = document.createElement("h3");
+        educationSectionHeadingEl.innerHTML = "Educational Qualifications";
+        educationSectionHeadingEl.classList.add("section-heading");
+        bgContainerEl.appendChild(educationSectionHeadingEl);
+
+        let personEducationQualificationsContainerEl = document.createElement("div");
+        personEducationQualificationsContainerEl.classList.add("person-educational-details-container");
+        bgContainerEl.appendChild(personEducationQualificationsContainerEl);
+
+        let personQualificationInfoContainerEl1 = document.createElement("div");
+        personQualificationInfoContainerEl1.classList.add("person-qualifications-container");
+        personEducationQualificationsContainerEl.appendChild(personQualificationInfoContainerEl1);
+
+        let qualificationContainerEl1 = document.createElement("div");
+        personQualificationInfoContainerEl1.appendChild(qualificationContainerEl1);
+
+        let personInstitutionNameEl1 = document.createElement("h3");
+        personInstitutionNameEl1.innerHTML = "TKR College Of Engineering & Technology";
+        personInstitutionNameEl1.classList.add("person-school-name");
+        qualificationContainerEl1.appendChild(personInstitutionNameEl1);
+
+        let personQualificationTypeEl1 = document.createElement("p");
+        personQualificationTypeEl1.innerHTML = "Bachelor in Technology";
+        personQualificationTypeEl1.classList.add("person-qualification-type");
+        qualificationContainerEl1.appendChild(personQualificationTypeEl1);
+
+        let personSpecializationEl1 = document.createElement("p");
+        personSpecializationEl1.innerHTML = "Electronics And Communication Engineering";
+        personSpecializationEl1.classList.add("person-specialization");
+        qualificationContainerEl1.appendChild(personSpecializationEl1);
+
+        let personGPAEl1 = document.createElement("p");
+        personGPAEl1.innerHTML = "Secured CGPA : ";
+        qualificationContainerEl1.appendChild(personGPAEl1);
+         
+        let securedGpaEl1 = document.createElement("span");
+        securedGpaEl1.innerHTML = "8.04";
+        securedGpaEl1.classList.add("secured-gpa");
+        personGPAEl1.appendChild(securedGpaEl1);
+
+        let personPassOutYearInfoEl1 = document.createElement("p");
+        personPassOutYearInfoEl1.innerHTML = "(2021-2024)";
+        personQualificationInfoContainerEl1.appendChild(personPassOutYearInfoEl1);
+
+        let personQualificationInfoContainerEl2 = document.createElement("div");
+        personQualificationInfoContainerEl2.classList.add("person-qualifications-container");
+        personEducationQualificationsContainerEl.appendChild(personQualificationInfoContainerEl2);
+
+        let qualificationContainerEl2 = document.createElement("div");
+        personQualificationInfoContainerEl2.appendChild(qualificationContainerEl2);
+
+        let personInstitutionNameEl2 = document.createElement("h3");
+        personInstitutionNameEl2.innerHTML = "Kshatriya College Of Engineering Armoor";
+        personInstitutionNameEl2.classList.add("person-school-name");
+        qualificationContainerEl2.appendChild(personInstitutionNameEl2);
+
+        let personQualificationTypeEl2 = document.createElement("p");
+        personQualificationTypeEl2.innerHTML = "Diploma";
+        personQualificationTypeEl2.classList.add("person-qualification-type");
+        qualificationContainerEl2.appendChild(personQualificationTypeEl2);
+
+        let personSpecializationEl2 = document.createElement("p");
+        personSpecializationEl2.innerHTML = "Electronics And Communication Engineering";
+        personSpecializationEl2.classList.add("person-specialization");
+        qualificationContainerEl2.appendChild(personSpecializationEl2);
+
+        let personGPAEl2 = document.createElement("p");
+        personGPAEl2.innerHTML = "Secured CGPA : ";
+        qualificationContainerEl2.appendChild(personGPAEl2);
+         
+        let securedGpaEl2 = document.createElement("span");
+        securedGpaEl2.innerHTML = "9.23";
+        securedGpaEl2.classList.add("secured-gpa");
+        personGPAEl2.appendChild(securedGpaEl2);
+
+        let personPassOutYearInfoEl2 = document.createElement("p");
+        personPassOutYearInfoEl2.innerHTML = "(2018-2021)";
+        personQualificationInfoContainerEl2.appendChild(personPassOutYearInfoEl2);
+
+        let personQualificationInfoContainerEl3 = document.createElement("div");
+        personQualificationInfoContainerEl3.classList.add("person-qualifications-container");
+        personEducationQualificationsContainerEl.appendChild(personQualificationInfoContainerEl3);
+
+        let qualificationContainerEl3 = document.createElement("div");
+        personQualificationInfoContainerEl3.appendChild(qualificationContainerEl3);
+
+        let personInstitutionNameEl3 = document.createElement("h3");
+        personInstitutionNameEl3.innerHTML = "Oasis High School";
+        personInstitutionNameEl3.classList.add("person-school-name");
+        qualificationContainerEl3.appendChild(personInstitutionNameEl3);
+
+        let personQualificationTypeEl3 = document.createElement("p");
+        personQualificationTypeEl3.innerHTML = "SSC";
+        personQualificationTypeEl3.classList.add("person-qualification-type");
+        qualificationContainerEl3.appendChild(personQualificationTypeEl3);
+
+        let personSpecializationEl3 = document.createElement("p");
+        personSpecializationEl3.innerHTML = "Electronics And Communication Engineering";
+        personSpecializationEl3.classList.add("person-specialization");
+        qualificationContainerEl3.appendChild(personSpecializationEl3);
+
+        let personGPAEl3 = document.createElement("p");
+        personGPAEl3.innerHTML = "Secured CGPA : ";
+        qualificationContainerEl3.appendChild(personGPAEl3);
+         
+        let securedGpaEl3 = document.createElement("span");
+        securedGpaEl3.innerHTML = "9.3";
+        securedGpaEl3.classList.add("secured-gpa");
+        personGPAEl3.appendChild(securedGpaEl3);
+
+        let personPassOutYearInfoEl3 = document.createElement("p");
+        personPassOutYearInfoEl3.innerHTML = "(2018)";
+        personQualificationInfoContainerEl3.appendChild(personPassOutYearInfoEl3);
+
+        let skillSectionHeadingEl = document.createElement("h3");
+        skillSectionHeadingEl.innerHTML = "Skills";
+        skillSectionHeadingEl.classList.add("section-heading");
+        bgContainerEl.appendChild(skillSectionHeadingEl);
+
+        let personSkillsContainerEl = document.createElement("div");
+        personSkillsContainerEl.classList.add("person-skills-container");
+        bgContainerEl.appendChild(personSkillsContainerEl);
+
+        let skill1 = document.createElement("li");
+        skill1.innerHTML = "Frontened : ";
+        skill1.classList.add("skill-type");
+        personSkillsContainerEl.appendChild(skill1);
+        let skillTypeEl1 = document.createElement("span");
+        skillTypeEl1.innerHTML = "HTML5, CSS3, JavaScript";
+        skill1.appendChild(skillTypeEl1);
+
+        let skill2 = document.createElement("li");
+        skill2.innerHTML = "DataBase : ";
+        skill2.classList.add("skill-type");
+        personSkillsContainerEl.appendChild(skill2);
+        let skillTypeEl2 = document.createElement("span");
+        skillTypeEl2.innerHTML = "SQlite";
+        skill2.appendChild(skillTypeEl2);
+
+        let skill3 = document.createElement("li");
+        skill3.innerHTML = "Other : ";
+        skill3.classList.add("skill-type");
+        personSkillsContainerEl.appendChild(skill3);
+        let skillTypeEl3 = document.createElement("span");
+        skillTypeEl3.innerHTML = "C, Python";
+        skill3.appendChild(skillTypeEl3);
+        
+        
+        
+        
+        
+
+
+
+    </script>
+</body>
+</html>
